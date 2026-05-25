@@ -11,11 +11,11 @@
       "module": "uvicorn",
       "args": [
         "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
+        "--reload"
       ],
-      "jinja": true
+      "jinja": true,
+      "justMyCode": true,
+      "showReturnValue": true
     }
   ]
 }
