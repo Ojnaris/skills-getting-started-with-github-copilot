@@ -1,8 +1,12 @@
 def test_get_activities_returns_expected_structure(client):
-    response = client.get("/activities")
+    # Arrange
 
-    assert response.status_code == 200
+    # Act
+    response = client.get("/activities")
     data = response.json()
+
+    # Assert
+    assert response.status_code == 200
     assert isinstance(data, dict)
     assert "Chess Club" in data
 
